@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="700" viewBox="0 0 1280 700" role="img" aria-label="Actual npx tsx src/test.ts output from successful GitHub Actions run">
+  <rect width="1280" height="700" rx="16" fill="#0d1117"/>
+  <rect width="1280" height="54" rx="16" fill="#161b22"/>
+  <rect y="38" width="1280" height="16" fill="#161b22"/>
+  <circle cx="28" cy="27" r="7" fill="#ff5f56"/>
+  <circle cx="52" cy="27" r="7" fill="#ffbd2e"/>
+  <circle cx="76" cy="27" r="7" fill="#27c93f"/>
+  <text x="640" y="33" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" fill="#c9d1d9">GitHub Actions — npx tsx src/test.ts</text>
+  <text x="28" y="90" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" fill="#79c0ff">$ npx tsx src/test.ts</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" fill="#c9d1d9">
+    <text x="28" y="137"><tspan fill="#3fb950">PASS</tspan><tspan> createPatient: 3 test.patient.1792644402944-vc7ti@example.com</tspan></text>
+    <text x="28" y="170"><tspan fill="#3fb950">PASS</tspan><tspan> getPatient: Test Patient</tspan></text>
+    <text x="28" y="203"><tspan fill="#3fb950">PASS</tspan><tspan> searchPatients: 1 match(es)</tspan></text>
+    <text x="28" y="236"><tspan fill="#3fb950">PASS</tspan><tspan> updatePatientPhone: +91-92222-22222</tspan></text>
+    <text x="28" y="269"><tspan fill="#3fb950">PASS</tspan><tspan> createDoctor: 3 General Medicine</tspan></text>
+    <text x="28" y="302"><tspan fill="#3fb950">PASS</tspan><tspan> getDoctor: Test Doctor</tspan></text>
+    <text x="28" y="335"><tspan fill="#3fb950">PASS</tspan><tspan> listDoctorsBySpecialty: 1 match(es)</tspan></text>
+    <text x="28" y="368"><tspan fill="#3fb950">PASS</tspan><tspan> bookAppointment: 4 test.patient.1792644402944-vc7ti@example.com test.doctor.1792644402944-vc7ti@example.com</tspan></text>
+    <text x="28" y="401"><tspan fill="#3fb950">PASS</tspan><tspan> getAppointmentFull: Test with Test</tspan></text>
+    <text x="28" y="434"><tspan fill="#3fb950">PASS</tspan><tspan> getDoctorUpcomingAppointments: 1 upcoming appointment(s)</tspan></text>
+    <text x="28" y="467"><tspan fill="#3fb950">PASS</tspan><tspan> setAppointmentStatus: confirmed</tspan></text>
+    <text x="28" y="500"><tspan fill="#3fb950">PASS</tspan><tspan> cancelAllPatientAppointments: 1 appointment(s) cancelled</tspan></text>
+    <text x="28" y="533"><tspan fill="#3fb950">PASS</tspan><tspan> deleteAppointment: 4</tspan></text>
+    <text x="28" y="566"><tspan fill="#3fb950">PASS</tspan><tspan> deletePatient: 3</tspan></text>
+    <text x="28" y="599"><tspan fill="#3fb950">PASS</tspan><tspan> deleteDoctor: 3</tspan></text>
+  </g>
+  <rect x="24" y="622" width="1232" height="48" rx="8" fill="#12261e" stroke="#238636"/>
+  <text x="42" y="652" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#3fb950">All 15 CRUD checks passed.</text>
+  <text x="1252" y="690" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#8b949e">Source: successful GitHub Actions job 119644187368</text>
+</svg>
