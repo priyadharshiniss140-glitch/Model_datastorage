@@ -1,0 +1,47 @@
+name: Prisma CRUD verification
+
+on:
+  push:
+    branches: [main, feature/prisma-crud]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: hospital_api
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d hospital_api"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/hospital_api?schema=public
+      PGPASSWORD: postgres
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install dependencies
+        run: npm install
+      - name: Generate Prisma Client
+        run: npx prisma generate
+      - name: Create PostgreSQL tables
+        run: psql "$DATABASE_URL" -f sql/create_tables.sql
+      - name: Seed database
+        run: npx prisma db seed
+      - name: Run CRUD checks
+        run: npx tsx src/test.ts
+      - name: Type-check TypeScript
+        run: npm run typecheck
