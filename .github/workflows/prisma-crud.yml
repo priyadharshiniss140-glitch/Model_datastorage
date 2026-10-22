@@ -38,7 +38,7 @@ jobs:
       - name: Generate Prisma Client
         run: npx prisma generate
       - name: Create PostgreSQL tables
-        run: psql "$DATABASE_URL" -f sql/create_tables.sql
+        run: psql "postgresql://postgres:postgres@localhost:5432/hospital_api" -f sql/create_tables.sql
       - name: Seed database
         run: npx prisma db seed
       - name: Run CRUD checks
