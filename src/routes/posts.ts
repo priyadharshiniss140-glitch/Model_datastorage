@@ -15,7 +15,7 @@ function prismaErrorCode(error: unknown): string | undefined {
 postsRouter.post(
   "/:id/vote",
   async (req: Request, res: Response, next: NextFunction): Promise<void> => {
-    const postId = parseInt(req.params.id, 10);
+    const postId = parseInt(req.params.id as string, 10);
     const userId = req.user.id;
 
     // Validate before making any database calls.
